@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section>
       <div
-        className="rounded-lg aspect-square md:aspect-[3/1] overflow-hidden bg-cover bg-center"
+        className="aspect-square md:aspect-[3/1] overflow-hidden bg-cover bg-center"
         style={{
           backgroundImage: `url("/img/hero.jpg")`,
         }}

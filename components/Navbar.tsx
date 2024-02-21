@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { navLinks } from "@/constants";
 import React from "react";
+import { ShoppingCart } from "lucide-react";
 
 export default function Navbar() {
   return (
@@ -22,8 +23,16 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-        <div>
-          <Link href="/" className="text-[13px]">S'inscrire / Se connecter</Link>
+        <div className="flex items-center gap-3">
+          <div className="relative">
+            <ShoppingCart color="#333" strokeWidth={1.5} />
+            <div className="absolute text-center top-[-5px] right-[-5px] bg-red-600 h-[15px] w-[15px] rounded-full">
+              <p className="text-[12px] text-white">3</p>
+            </div>
+          </div>
+          <Link href="/" className="text-[13px]">
+            S'inscrire / Se connecter
+          </Link>
         </div>
       </nav>
     </header>

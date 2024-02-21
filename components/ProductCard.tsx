@@ -11,7 +11,7 @@ type Props = {
 
 export default function ProductCard({product} : Props) {
   return (
-    <Link href={`/products/${product.slug}`}>
+    <Link href={`/product/${product.slug}`}>
       <Card className="flex flex-col justify-between rounded-lg border h-[100%] bg-gray-300 dark:bg-black">
         <CardHeader>
           <div className="rounded-lg aspect-square relative overflow-hidden">
